@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>baidunetdisk</Name>
+  <Repository>johngong/baidunetdisk</Repository>
+  <Registry>https://hub.docker.com/r/johngong/baidunetdisk/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/cody1996/unraid-apps/tree/main/baidunetdisk/</Support>
+  <Project>https://hub.docker.com/r/johngong/baidunetdisk/</Project>
+  <Overview>&#x5B98;&#x65B9;&#x767E;&#x5EA6;&#x7F51;&#x76D8;&#x5BA2;&#x6237;&#x7AEF;VNC&#x7248;</Overview>
+  <Category>Downloaders:</Category>
+  <WebUI>http://[IP]:[PORT:5800]</WebUI>
+  <TemplateURL>https://github.com/cody1996/unraid-apps/raw/main/baidunetdisk/baidunetdisk.xml</TemplateURL>
+  <Icon>https://github.com/cody1996/unraid-apps/raw/main/baidunetdisk/icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>&#x5B98;&#x65B9;&#x767E;&#x5EA6;&#x7F51;&#x76D8;&#x5BA2;&#x6237;&#x7AEF;VNC&#x7248;</Description>
+  <Config Name="WebUI Port" Target="5800" Default="5800" Mode="tcp" Description="Container Port: 5800" Type="Port" Display="always" Required="true" Mask="false">5800</Config>
+  <Config Name="VNC_PASSWORD" Target="VNC_PASSWORD" Default="" Mode="" Description="Password needed to connect to the application's GUI." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Data" Target="/data" Default="" Mode="rw" Description="Data directory." Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Configuration files." Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/baidunetdisk</Config>
+  <Config Name="Timezone" Target="TZ" Default="Asia/Shanghai" Mode="" Description="[TimeZone] of the container. Full list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
+  <Config Name="USER_ID" Target="USER_ID" Default="99" Mode="" Description="ID of the user the application runs as." Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
+  <Config Name="GROUP_ID" Target="GROUP_ID" Default="100" Mode="" Description="ID of the group the application runs as." Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="Mask that controls how file permissions are set for newly created files. The value of the mask is in octal notation. See the following online umask calculator: http://wintelguy.com/umask-calc.pl" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+  <Config Name="DISPLAY_WIDTH" Target="DISPLAY_WIDTH" Default="1100" Mode="" Description="Width (in pixels) of the application's window." Type="Variable" Display="advanced" Required="true" Mask="false">1100</Config>
+  <Config Name="DISPLAY_HEIGHT" Target="DISPLAY_HEIGHT" Default="800" Mode="" Description="Height (in pixels) of the application's window." Type="Variable" Display="advanced" Required="true" Mask="false">800</Config>
+</Container>
