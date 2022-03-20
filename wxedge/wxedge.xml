@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>wxedge</Name>
+  <Repository>onething1/wxedge</Repository>
+  <Registry>https://hub.docker.com/r/onething1/wxedge/</Registry>
+  <Network>host</Network>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support>https://github.com/cody1996/unraid-apps/tree/main/wxedge/</Support>
+  <Project>https://hub.docker.com/r/onething1/wxedge/</Project>
+  <Overview>&#x7F51;&#x5FC3;&#x4E91;&#x5BB9;&#x5668;&#x9B54;&#x65B9;&#x81EA;&#x9002;&#x5E94;cpu&#x67B6;&#x6784;&#xFF08;&#x63A8;&#x8350;&#xFF09;</Overview>
+  <Category>Cloud:</Category>
+  <WebUI>http://[IP]:[PORT:18888]</WebUI>
+  <TemplateURL>https://github.com/cody1996/unraid-apps/raw/main/wxedge/wxedge.xml</TemplateURL>
+  <Icon>https://github.com/cody1996/unraid-apps/raw/main/wxedge/icon.png</Icon>
+  <ExtraParams>--tmpfs /run --tmpfs /tmp --memory=800m --cpus=2</ExtraParams>
+  <PostArgs/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>&#x7F51;&#x5FC3;&#x4E91;&#x5BB9;&#x5668;&#x9B54;&#x65B9;&#x81EA;&#x9002;&#x5E94;cpu&#x67B6;&#x6784;&#xFF08;&#x63A8;&#x8350;&#xFF09;</Description>
+  <Config Name="&#x78C1;&#x76D8;&#x8DEF;&#x5F84;" Target="/storage" Default="" Mode="rw" Description="&#x78C1;&#x76D8;&#x7684;&#x76EE;&#x5F55;&#xFF0C;&#x6302;&#x8F7D;&#x5230;&#x5BB9;&#x5668;&#x5185;&#x7684;/storage&#x76EE;&#x5F55;&#xFF0C;&#x63A8;&#x8350;&#x78C1;&#x76D8;&#x662F;ext4&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF0C;&#x81F3;&#x5C11;&#x9700;&#x8981;50G&#x4EE5;&#x4E0A;&#x7684;&#x7A7A;&#x95F4;&#xFF0C;&#x5EFA;&#x8BAE;&#x662F;&#x56FA;&#x6001;&#x786C;&#x76D8;&#x3002;" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="&#x76D1;&#x542C;&#x5730;&#x5740;" Target="LISTEN_ADDR" Default=":18888" Mode="" Description="&#x652F;&#x6301;&#x8BBE;&#x7F6E;&#x7ED1;&#x5B9A;&#x9875;&#x9762;&#x7684;&#x76D1;&#x542C;&#x5730;&#x5740;&#x548C;&#x7AEF;&#x53E3;&#xFF0C;&#x76D1;&#x542C;&#x5168;&#x5730;&#x5740;&#x8BBE;&#x7F6E;" Type="Variable" Display="always" Required="true" Mask="false">:18888</Config>
+  <Config Name="NIC" Target="NIC" Default="" Mode="" Description="&#x6709;&#x591A;&#x7F51;&#x5361;&#x591A;&#x7EBF;&#x8DEF;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8BE5;&#x53C2;&#x6570;&#x6307;&#x5B9A;&#x8DEF;&#x7531;&#x7F51;&#x5361;&#xFF0C;&#x4E0D;&#x914D;&#x7F6E;&#x4F1A;&#x81EA;&#x52A8;&#x9009;&#x9ED8;&#x8BA4;&#x8DEF;&#x7531;&#x7F51;&#x5361;&#x3002;" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="REC" Target="REC" Default="" Mode="" Description="&#x7B2C;&#x4E00;&#x6B21;&#x5B89;&#x88C5;&#x8BBE;&#x7F6E;&#x4E3A;false&#x65F6;&#xFF0C;&#x4E0D;&#x4F1A;&#x542F;&#x52A8;&#x9ED8;&#x8BA4;&#x4EFB;&#x52A1;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;true&#xFF0C;&#x4EC5;&#x7B2C;&#x4E00;&#x6B21;&#x5B89;&#x88C5;&#x6709;&#x6548;&#x3002;" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
