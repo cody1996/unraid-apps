@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>qbittorrentee</Name>
+  <Repository>superng6/qbittorrentee</Repository>
+  <Registry>https://hub.docker.com/r/superng6/qbittorrentee/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/cody1996/unraid-apps/</Support>
+  <Project>https://github.com/SuperNG6/Docker-qBittorrent-Enhanced-Edition/</Project>
+  <Overview>[&#x5168;&#x5E73;&#x53F0; x86-64&#x3001;arm64&#x3001;arm32] qBittorrent&#x589E;&#x5F3A;&#x7248;&#xFF0C;&#x9632;&#x5438;&#x8840;</Overview>
+  <Category>Downloaders:</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL>https://github.com/cody1996/unraid-apps/raw/main/qbittorrentee/qbittorrentee.xml</TemplateURL>
+  <Icon>https://github.com/cody1996/unraid-apps/raw/main/qbittorrentee/icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>[&#x5168;&#x5E73;&#x53F0; x86-64&#x3001;arm64&#x3001;arm32] qBittorrent&#x589E;&#x5F3A;&#x7248;&#xFF0C;&#x9632;&#x5438;&#x8840;</Description>
+  <Config Name="Port: 6881" Target="6881" Default="6881" Mode="tcp" Description="tcp connection port" Type="Port" Display="always" Required="true" Mask="false">6881</Config>
+  <Config Name="Port: 6881" Target="6881" Default="6881" Mode="udp" Description="udp connection port" Type="Port" Display="always" Required="true" Mask="false">6881</Config>
+  <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="Location of downloads on disk." Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="WEBUI_PORT" Target="WEBUI_PORT" Default="8080" Mode="" Description="for changing the port of the webui." Type="Variable" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="Additional location of downloads." Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/qbittorrentee</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+</Container>

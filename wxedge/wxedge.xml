@@ -6,14 +6,14 @@
   <Network>host</Network>
   <Shell>sh</Shell>
   <Privileged>true</Privileged>
-  <Support>https://github.com/cody1996/unraid-apps/tree/main/wxedge/</Support>
+  <Support>https://github.com/cody1996/unraid-apps/</Support>
   <Project>https://hub.docker.com/r/onething1/wxedge/</Project>
   <Overview>&#x7F51;&#x5FC3;&#x4E91;&#x5BB9;&#x5668;&#x9B54;&#x65B9;&#x81EA;&#x9002;&#x5E94;cpu&#x67B6;&#x6784;&#xFF08;&#x63A8;&#x8350;&#xFF09;</Overview>
   <Category>Cloud:</Category>
   <WebUI>http://[IP]:[PORT:18888]</WebUI>
   <TemplateURL>https://github.com/cody1996/unraid-apps/raw/main/wxedge/wxedge.xml</TemplateURL>
   <Icon>https://github.com/cody1996/unraid-apps/raw/main/wxedge/icon.png</Icon>
-  <ExtraParams>--tmpfs /run --tmpfs /tmp --memory=800m --cpus=2</ExtraParams>
+  <ExtraParams>--tmpfs /run --tmpfs /tmp --memory=3g --cpus=2</ExtraParams>
   <PostArgs/>
   <DonateText/>
   <DonateLink/>

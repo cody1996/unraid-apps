@@ -6,7 +6,7 @@
   <Network>bridge</Network>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/cody1996/unraid-apps/tree/main/baidunetdisk/</Support>
+  <Support>https://github.com/cody1996/unraid-apps/</Support>
   <Project>https://hub.docker.com/r/johngong/baidunetdisk/</Project>
   <Overview>&#x5B98;&#x65B9;&#x767E;&#x5EA6;&#x7F51;&#x76D8;&#x5BA2;&#x6237;&#x7AEF;VNC&#x7248;</Overview>
   <Category>Downloaders:</Category>
